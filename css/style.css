@@ -15,23 +15,47 @@ body {
   /* border: 3px solid black; */
 }
 
-header {
-  width: 100%;
-  height: 300px;
-  background-image: url(../img/head-img.png);
-  background-size: cover;
-  border: 10px solid white;
-  margin-top: 20px;
+main {
+  margin-top: 10px;
 }
 
-.image {
-  height: 200px;
+header {
+  position: relative;
+  height: 250px;
+  border: 10px solid white;
+  margin-top: 20px;
+  background-image: url(../img/head-img.png);
+  background-size: cover;
+  /* border: 3px solid black; */
+}
+
+.header-content {
+  width: 300px;
+  /* border: 4px solid black; */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.natural-icon {
+  width: 100%;
+}
+
+.text{
+  margin-top: 10px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 14px;
+  color: white;
 }
 
 .image-box {
- position: relative;
- height: auto;
- padding: 5px;
+  position: relative;
+  height: auto;
+  padding: 5px;
   /* border: 4px solid black; */
 }
 
@@ -43,8 +67,28 @@ header {
 
 .navbar {
   height: 40px;
-  background: #555;
-  margin-bottom: 10px;
+  background: #666;
+}
+
+ul {
+  text-align: center;
+}
+
+li {
+  font-size: 10px;
+  display: inline-block;
+  font-weight: bolder;
+  line-height: 40px;
+  padding: 0 5px;
+}
+
+li:hover {
+  background: #111;
+}
+
+a {
+  text-decoration: none;
+  color: white;
 }
 
 .left-box {
@@ -57,37 +101,15 @@ header {
   text-align: center;
 }
 
-a {
-  text-decoration: none;
-  color: white;
-}
-
-span {
-  font-size: 20px;
-  padding-left: 5px;
-}
-
-ul {
-  text-align: center;
-  padding-top: 10px;
-}
-
-li {
-  font-size: 10px;
-  display: inline-block;
-  font-weight: bolder;
-  padding: 5px;
-}
-
 .center-box {
   width: 50%;
   padding: 0 10px;
 }
 
-
-main {
+.center {
   background: #fff;
   height: 300px;
+  border-radius: 5px;
 }
 
 .right-box {
@@ -99,9 +121,10 @@ main {
   background: #fff;
   height: 300px;
   margin-bottom: 10px;
+  border-radius: 5px;
 }
 
-/* .right:nth-child(1) {
+/* .right:first-child {
 } */
 
 /* .right:nth-child(2) {
@@ -121,11 +144,29 @@ main {
   float: left;
 }
 
+.transparent {
+  background: transparent !important;
+}
 
 /* /utility */
 
 footer {
-  margin-top: 15px;
-  height: 60px;
-  background: #FFF000;
+  margin: 15px 0;
+  height: 150px;
+  background: #fff;
+  border-radius: 5px;
+}
+
+.credits {
+  height: 30px;
+  border-bottom: 2px solid lightgrey;
+  margin: 0 15px;
+  text-align: center;
+}
+
+.link-footer {
+  line-height: 150px;
+  width: 33.33%;
+  height: 120px;
+  /* border: 2px solid black; */
 }
